@@ -57,8 +57,3 @@ data/appointments.db
 ```
 
 Die Datei muss nicht manuell bearbeitet werden. Optional kann man sie mit einer SQLite-Viewer-Extension in VS Code anschauen.
-
-## Hinweis
-
-Falls `requirements.txt` nicht gefunden wird, befindet man sich sehr wahrscheinlich im falschen Ordner. Dann mit `dir` prüfen, ob `requirements.txt`, `app.py` und `game.py` im aktuellen Ordner liegen.
-
