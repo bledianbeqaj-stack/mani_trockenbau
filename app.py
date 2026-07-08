@@ -241,16 +241,6 @@ class InputValidator:
         return None
 
     @staticmethod
-    def valid_dates(days: int = 45) -> list[date]:
-        """Gibt die nächsten auswählbaren Tage ohne Sonntage zurück."""
-        today = date.today()
-        return [
-            today + timedelta(days=i)
-            for i in range(days)
-            if (today + timedelta(days=i)).weekday() != 6
-        ]
-
-    @staticmethod
     def time_slots(selected_day: date) -> list[str]:
         """Erzeugt buchbare Stunden abhängig vom Wochentag und der Mittagspause."""
         slots = []

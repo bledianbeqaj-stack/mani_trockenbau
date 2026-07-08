@@ -28,10 +28,6 @@ class TestValidation:
         assert InputValidator.validate_phone("+49123456789012") is not None
         assert InputValidator.validate_phone("017612345678") is not None
 
-    def test_valid_dates_do_not_include_sundays(self) -> None:
-        """Die Terminliste enthält keine Sonntage."""
-        assert all(day.weekday() != 6 for day in InputValidator.valid_dates(45))
-
     def test_time_slots_respect_opening_hours(self) -> None:
         """Mittagspause und Sonntag werden nicht als buchbare Zeiten geliefert."""
         monday = date(2026, 6, 22)
