@@ -1,7 +1,5 @@
 """Streamlit-App für Mani Trockenbau."""
 
-from __future__ import annotations
-
 import math
 import re
 import sqlite3
@@ -9,7 +7,7 @@ import subprocess
 import sys
 import streamlit.components.v1 as components
 from dataclasses import dataclass
-from datetime import date, time, timedelta
+from datetime import date, time 
 from pathlib import Path
 
 import streamlit as st
